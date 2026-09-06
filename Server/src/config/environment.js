@@ -34,8 +34,7 @@ CORS_ORIGIN: process.env.CORS_ORIGIN || "http://localhost:5173",
   // File Upload
   // ==========================
   MAX_FILE_SIZE: Number(process.env.MAX_FILE_SIZE) || 5 * 1024 * 1024,
-  ALLOWED_FILE_TYPES: ["pdf", "doc", "docx", "jpg", "jpeg", "png"],
-
+  ALLOWED_FILE_TYPES: ["pdf", "jpg", "jpeg", "png"],
   UPLOAD_DIR: path.join(
     process.cwd(),
     process.env.UPLOAD_DIR || "uploads"
