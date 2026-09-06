@@ -42,8 +42,7 @@ desktop.ini
 *.tgz
 *.pid
 *.pid.lock
-# ============================================================
-# CLIENT
-# ============================================================
-admindata
-data
+
+# Local data files
+admindata.js
+data.js
