@@ -1,0 +1,133 @@
+/* LoginPage.css - replace entire file with this */
+
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fb;
+  font-family: 'roboto', sans-serif;
+}
+
+/* Layout */
+.container {
+  display: block; /* use block because sidebar is fixed */
+}
+img{
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sidebar - fixed to left so no gap can appear */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;              /* change width if you want */
+  background-color: #1e64c8;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;            /* keep content scrollable if long */
+  z-index: 10;
+}
+
+/* Main area sits to the right of the fixed sidebar */
+.main {
+  margin-left: 300px;        /* must match .sidebar width */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fb;
+  padding: 40px;             /* safe padding for small screens */
+  overflow: auto;
+}
+
+/* Login box */
+.login-box {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  width: 420px;
+  max-width: calc(100% - 40px);
+}
+
+/* Typography / form */
+.sidebar h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  background-color: rgba(104,146,205,0.67);
+  border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.sidebar li {
+  width: 100%;
+  padding: 12px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.sidebar li:hover { color: #0b203d; }
+
+.login-box h1 { font-size: 28px; font-weight: 600; margin-bottom: 30px; }
+
+label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+  margin-right: 250px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 18px;
+  transition: border-color .2s;
+}
+
+input:focus { border-color: #1e64c8; }
+
+button {
+  background-color: #1e64c8;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.forgot { margin-top: 10px; text-align: right; }
+.forgot a { color: #1e64c8; text-decoration: none; font-size: 14px; }

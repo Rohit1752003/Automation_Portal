@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Client
+Client/dist/
+Client/.vite/
+
+# Server runtime
+Server/uploads/
+Server/generated/
+Server/tmp/
+Server/temp/
+
+# Logs
+*.log
+logs/
+
+# Tests
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.eslintcache
+.npm/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build/package
+*.tgz
+*.pid
+*.pid.lock
+# ============================================================
+# CLIENT
+# ============================================================
+adminData
+data
